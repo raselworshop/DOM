@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour of DOM</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        /* #places{
+            color: black;
+        } */
+         .places-container li{
+            color: chocolate;
+         }
+        .important-fruits{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>I am from DOM</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Necessitatibus repellendus at itaque alias minima mollitia
+             sunt minus, reiciendis qui! Ipsam!</p>
+    </header>
+    <main>
+        <section>
+            <h1>hi there how are you, now DOM running</h1>
+            <ul>
+                <li>android</li>
+                <li>IOS</li>
+                <li>Linux</li>
+            </ul>
+        </section>
+        <section id="place-container" class="places-container large-text">
+            <h1 id="places">Places I like to visit</h1>
+            <ul>
+                <li>cox's bazar</li>
+                <li>seint martin</li>
+                <li>kuyakata</li>
+                <li>ronpur</li>
+            </ul>
+        </section>
+        <section class="fruits-container">
+            <h1 id="fruit">Fruits I like</h1>
+            <ul>
+                <li class="important-fruits">Mango</li>
+                <li class="important-fruits">Banana</li>
+                <li class="important-fruits">Dragons Fruits</li>
+                <li id="fruitsP">Papaya</li>
+            </ul>
+        </section>
+    </main>
+    <script src="scripts/dom.js"></script>
+    <script src="scripts/stylein.js"></script>
+    <script>
+        const elements = document.getElementsByTagName('h1');
+        // console.log(element)
+        for(const h1 of elements){
+            // console.log(h1.innerText)
+        }
+        // querySelector
+        const someLi = document.querySelectorAll('.places-container li');
+        // console.log(someLi)
+        for(const li of someLi){
+            // console.log(li)
+            // console.log(li.innerText)
+        }
+    </script>
+</body>
+</html>
